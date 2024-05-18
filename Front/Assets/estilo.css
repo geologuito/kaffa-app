@@ -90,7 +90,7 @@
   font-style: normal;
   /* max-width: 1300px */
 }
-
+/*Estilos para el header y nav*/
 header{
   display: flex;
   align-items: center;
@@ -121,7 +121,7 @@ header{
   margin-right: 5%;
 }
 
-.abrirMenu, .cerrarMenu{
+.abrirMenu, .cerrarMenu{ /*son los botones para abrir y cerar el menú hamburguesa que aparecen en small devices*/
   display: none;
 }
 
@@ -142,12 +142,12 @@ nav a{
   padding-right: 1%;
 }
 
-a:link,a:visited,a:active{
+a:link,a:visited,a:active{ /*cambia el estilo de los links*/
   text-decoration: none;
   color: #FEF7DC;
 }
 
-a:hover{
+a:hover{ /*da el efecto de subrayado y cambio de color cuando se pasa el cursor por arriba*/
   text-decoration:underline;
   color: #e2ddd9;
 }
@@ -160,7 +160,7 @@ a:hover{
     font-style: italic;
     font-size: 150%;
 }
-
+/*Carrousel*/
 .card {
     /* color:whitesmoke; */
     color: #4E4634;
@@ -205,7 +205,7 @@ a:hover{
     justify-content: center;
     align-items: center;
 }
-
+/*Formulario de registro*/
 .form-registrer{
   box-sizing: border-box;
   width: 80%;
@@ -217,13 +217,13 @@ a:hover{
   background-repeat: no-repeat;
   background-position: center;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 2%;
+  margin-bottom: 2%;
   text-align: center;
   box-shadow: 7px 13px 37px #000;
 }
 
-.controlsSusc{
+.controlsSusc{/*cajitas de texto del formulario de registro*/
 width: 90%;
 background-color: #E6DDC6;
 padding: 10px;
@@ -253,6 +253,107 @@ margin-bottom: 10px;
   font-style: normal;
 }
 
+/*Formulario reseñas*/
+.form-resena{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+  }
+  
+  .containerIdCafe{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin: 2%;
+  }
+  
+  .containerIdCafe input{
+    font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    padding-left: 0.4rem;
+    width: 40rem;
+    border-radius: 5px;
+  }
+  
+  #localidades{
+    width: auto;
+    font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    padding: 0.2rem;
+    border-radius: 5px;
+  }
+  
+  /*container de rating con estrellas*/
+  .containerRating{
+    display: flex;
+    max-width: 850px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .form-resena .containerRatingClase{
+    display: flex; 
+    /* justify-content: center; */
+    align-items: center;
+    margin: 10px; 
+  }
+  
+  .form-resena .containerRatingClase h3{
+    min-width: 180px;
+    padding-right: 20px;
+  }
+  
+  .form-resena .containerRatingClase .ratingStars{
+    position: relative;
+    display: flex;
+    transform: rotateY(180deg); /*esta rotación está porque por algún motivo las estrellas se pintan de derecha a izquierda en lugar de izquierda a derecha como es lo lógico*/
+  }
+  
+  .ratingStars input{
+    display: none;
+  }
+  
+  .ratingStars label{
+    cursor: pointer;
+    width: 2rem;
+  }
+  
+  .ratingStars label:before{
+    content: '★';
+    position: relative;
+    display: block;
+    font-size: 2rem;
+    color: #A19882
+  }
+  
+  .ratingStars label:after{
+    content: '★';
+    position: absolute;
+    display: block;
+    font-size: 2rem;
+    color: gold;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5)
+  }
+  .ratingStars label:hover:after{
+    opacity: 1;
+  }
+  .ratingStars label:hover:after,
+  .ratingStars label:hover ~ label:after,
+  .ratingStars input:checked ~ label:after{
+    opacity: 1;
+  } /*hace que las estrellas se pinten al marcarlas y tiene una animación que hace que se pinten al pasar el mouse por arriba */
+/*Footer*/
 footer{
   background-color: #A19882;
 }
@@ -332,4 +433,9 @@ footer{
     align-items: end;
     text-align: right;
   }
-}
+    /*Achica las barras de ingreso de texto*/
+    .containerIdCafe input{
+      width: 50%;
+      min-width: 10rem;
+    }
+  }

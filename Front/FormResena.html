@@ -13,6 +13,7 @@
     <link rel="icon" href="Assets/Img/Coffee bean icon3.ico">
     <title>Tu Kaffa Rico - Reseñas</title>
 </head>
+
 <body class="body">
     <header>
         <div class="navSection">
@@ -30,58 +31,132 @@
     </header>
 
     <section class="form-resena">
-        <h4>Calificá tu cafetería</h4>
-        <div>
-            <label for="NombreCafe">Cafetería</label>
-            <input class="controlsResena" type="text" name="NombreCafe" id="nombreCafe" placeholder="Nombre de la cafetería">
-            <label for="NombreCafe">Dirección</label>
-            <input class="controlsResena" type="text" name="Direccion" id="direccion" placeholder="Dirección de la cafetería">
-            <form action="#">
-                <label for="localidad">Localidad</label>
-                <select name="localidades" id="localidades">
-                    <option value="a">A</option>
-                    <option value="b">B</option>
-                    <option value="c">C</option>
-                    <option value="d">D</option>
-                    <option value="e">E</option>
-                    <option value="f">F</option>
-                    <option value="g">G</option>
-                    <option value="h">H</option>
-                    <option value="i">I</option>
-                    <option value="j">J</option>
-                    <option value="k">K</option>
-                    <option value="l">L</option>
-                    <option value="m">M</option>
-                    <option value="n">N</option>
-                    <option value="o">O</option>
-                    <option value="p">P</option>
-                    <option value="q">Q</option>
-                    <option value="r">R</option>
-                    <option value="s">S</option>
-                </select>
+        <h2>Calificá tu cafetería</h2>
+        <div class="containerIdCafe">
+            <div>
+                <label for="nombreCafe">Cafetería</label>
+                <input class="controlsResena" type="text" name="NombreCafe" id="nombreCafe" placeholder="Nombre de la cafetería">
             </div>
             <div>
-                <p>Calidad del café</p>
-                <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-                <p>Variedad</p>
-                <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-                <p>Pastelería</p>
-                <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-                <p>Arquitectura</p>
-                <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-                <p>Ambiente</p>
-                <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-                <p>Comodidad</p>
-                <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-                <p>Servicio</p>
-                <input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox"><input type="checkbox">
-                <label for="comentarios">Dejá tu opinión</label>
-                <input type="text" class="comentarios" name="comentarios" id="comentarios">
+                <label for="direccion">Dirección</label>
+                <input class="controlsResena" type="text" name="Direccion" id="direccion" placeholder="Dirección de la cafetería">
             </div>
-        </form>
-
+            <div>
+                <form action="#">
+                    <label for="localidades">Localidad</label>
+                    <select name="localidades" id="localidades">
+                        <option value="Avellaneda">Avellaneda</option>
+                        <option value="Gral. San Martín">Gral. San Martín</option>
+                        <option value="La Matanza">La Matanza</option>
+                        <option value="Lanús">Lanús</option>
+                        <option value="Lomas de Zamora">Lomas de Zamora</option>
+                        <option value="Morón">Morón</option>
+                        <option value="Quilmes">Quilmes</option>
+                        <option value="San Isidro">San Isidro</option>
+                        <option value="Tres de Febrero">Tres de Febrero</option>
+                        <option value="Vicente López">Vicente López</option>
+                    </select>
+                </form>
+            </div>
+        </div>
+        <div class="containerRating">
+            <div class="containerRatingClase">
+                <h3 class="categoria">Calidad del café</h3>
+                <div class="ratingStars">
+                    <input type="radio" name="calidad" id="star1"><label for="star1"></label>
+                    <input type="radio" name="calidad" id="star2"><label for="star2"></label>
+                    <input type="radio" name="calidad" id="star3"><label for="star3"></label>
+                    <input type="radio" name="calidad" id="star4"><label for="star4"></label>
+                    <input type="radio" name="calidad" id="star5"><label for="star5"></label>
+                </div>
+            </div>
+            <div class="containerRatingClase">
+                <h3 class="categoria">Variedad</h3>
+                <div class="ratingStars">
+                    <input type="radio" name="variedad" id="star6"><label for="star6"></label>
+                    <input type="radio" name="variedad" id="star7"><label for="star7"></label>
+                    <input type="radio" name="variedad" id="star8"><label for="star8"></label>
+                    <input type="radio" name="variedad" id="star9"><label for="star9"></label>
+                    <input type="radio" name="variedad" id="star10"><label for="star10"></label>
+                </div>
+            </div>
+            <div class="containerRatingClase">
+                <h3 class="categoria">Pastelería</h3>
+                <div class="ratingStars">
+                    <input type="radio" name="pasteleria" id="star11"><label for="star11"></label>
+                    <input type="radio" name="pasteleria" id="star12"><label for="star12"></label>
+                    <input type="radio" name="pasteleria" id="star13"><label for="star13"></label>
+                    <input type="radio" name="pasteleria" id="star14"><label for="star14"></label>
+                    <input type="radio" name="pasteleria" id="star15"><label for="star15"></label>
+                </div>
+            </div>
+            <div class="containerRatingClase">
+                <h3 class="categoria">Arquitectura</h3>
+                <div class="ratingStars">
+                    <input type="radio" name="arquitectura" id="star16"><label for="star16"></label>
+                    <input type="radio" name="arquitectura" id="star17"><label for="star17"></label>
+                    <input type="radio" name="arquitectura" id="star18"><label for="star18"></label>
+                    <input type="radio" name="arquitectura" id="star19"><label for="star19"></label>
+                    <input type="radio" name="arquitectura" id="star20"><label for="star20"></label>
+                </div>
+            </div>       
+            <div class="containerRatingClase">
+                <h3 class="categoria">Ambiente</h3>
+                <div class="ratingStars">
+                    <input type="radio" name="ambiente" id="star21"><label for="star21"></label>
+                    <input type="radio" name="ambiente" id="star22"><label for="star22"></label>
+                    <input type="radio" name="ambiente" id="star23"><label for="star23"></label>
+                    <input type="radio" name="ambiente" id="star24"><label for="star24"></label>
+                    <input type="radio" name="ambiente" id="star25"><label for="star25"></label>
+                </div>
+            </div>               
+            <div class="containerRatingClase">
+                <h3 class="categoria">Comodidad</h3>
+                <div class="ratingStars">
+                    <input type="radio" name="comodidad" id="star26"><label for="star26"></label>
+                    <input type="radio" name="comodidad" id="star27"><label for="star27"></label>
+                    <input type="radio" name="comodidad" id="star28"><label for="star28"></label>
+                    <input type="radio" name="comodidad" id="star29"><label for="star29"></label>
+                    <input type="radio" name="comodidad" id="star30"><label for="star30"></label>
+                </div>
+            </div> 
+            <div class="containerRatingClase">
+                <h3 class="categoria">Servicio</h3>
+                <div class="ratingStars">
+                    <input type="radio" name="servicio" id="star31"><label for="star31"></label>
+                    <input type="radio" name="servicio" id="star32"><label for="star32"></label>
+                    <input type="radio" name="servicio" id="star33"><label for="star33"></label>
+                    <input type="radio" name="servicio" id="star34"><label for="star34"></label>
+                    <input type="radio" name="servicio" id="star35"><label for="star35"></label>
+                </div>
+            </div>   
+            <div class="containerRatingClase">
+                <h3 class="categoria">Limpieza</h3>
+                <div class="ratingStars">
+                    <input type="radio" name="limpieza" id="star36"><label for="star36"></label>
+                    <input type="radio" name="limpieza" id="star37"><label for="star37"></label>
+                    <input type="radio" name="limpieza" id="star38"><label for="star38"></label>
+                    <input type="radio" name="limpieza" id="star39"><label for="star39"></label>
+                    <input type="radio" name="limpieza" id="star40"><label for="star40"></label>
+                </div>
+            </div>
+        </div>           
     </section>
     <hr>
+    <footer>
+        <!-- <p class="seguinos">Seguinos:</p> -->
+        <div class="logos">
+            <a href="http://instagram.com"><i class="fi fi-brands-instagram"></i></a>
+            <a href="http://facebook.com"><i class="fi fi-brands-facebook"></i></a>
+            <a href="http://whatsapp.com"><i class="fi fi-brands-whatsapp"></i></a>
+            <a href="http://twiter.com"><i class="fi fi-brands-twitter"></i></a>
+            <a href="http://linkedin"><i class="fi fi-brands-linkedin"></i></a>
+            <!-- buscar como hacer para que se abra en una nueva pestaña -->
+        </div class="">
+        <span class="marca">Developed by Kaffa Team Project  - Full Stack Python - Codo a Codo 2024</span>
+    </footer>
+    <hr>
+
     <footer>
         <!-- <p class="seguinos">Seguinos:</p> -->
         <div class="logos">
