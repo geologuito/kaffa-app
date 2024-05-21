@@ -21,7 +21,7 @@
     padding: 20px 0;
     border-radius: 10px;
     box-sizing: border-box;
-    background-image: url("/assets/img/fondo9.jpg");
+    background-image: url("../img/fondo9.jpg");
     background-size: cover;
     /* Hace que la imagen se ajuste al contenedor sin distorsión */
     background-repeat: no-repeat;
