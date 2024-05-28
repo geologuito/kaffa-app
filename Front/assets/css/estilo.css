@@ -210,6 +210,22 @@ margin-bottom: 10px;
   font-weight: 600;
   font-style: normal;
 }
+/* Términos y condiciones */
+.encabezadoTerminos{
+  margin: 1%;
+}
+.terminos{
+  display: flex;
+  margin: 1%;
+  flex-wrap: wrap;
+}
+
+.volver{
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+  background-color: #4E4634;
+}
 
 /*Formulario reseñas*/
 .form-resena{
@@ -400,7 +416,7 @@ footer{
   }
 
 /*Really small devices (400px and down */
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 400px) {
     header{
       width: 100%;
       display: flex;
