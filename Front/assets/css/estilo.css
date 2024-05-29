@@ -308,7 +308,7 @@ margin-bottom: 10px;
   .form-resena .containerRatingClase .ratingStars{
     position: relative;
     display: flex;
-    transform: rotateY(180deg); /*esta rotación está porque por algún motivo las estrellas se pintan de derecha a izquierda en lugar de izquierda a derecha como es lo lógico*/
+    flex-direction: row-reverse; /*esta rotación está porque por algún motivo las estrellas se pintan de derecha a izquierda en lugar de izquierda a derecha como es lo lógico*/
   }
   
   .ratingStars input{
@@ -347,6 +347,10 @@ margin-bottom: 10px;
   .ratingStars input:checked ~ label:after{
     opacity: 1;
   } /*hace que las estrellas se pinten al marcarlas y tiene una animación que hace que se pinten al pasar el mouse por arriba */
+  /* .ratingStars label:hover:after,
+  .ratingStars input:checked ~ label:after{
+    opacity: 1;
+  } */
 
   /*Footer*/
 footer{
