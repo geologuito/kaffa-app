@@ -1,81 +1,3 @@
-/*código para las fuentes 
-#A19882
-#C2B8A3
-#E6DDC6
-#FEF7DC
-#4E4634*/
-
-/* .mali-extralight {
-    font-family: "Mali", cursive;
-    font-weight: 200;
-    font-style: normal;
-  }
-  
-  .mali-light {
-    font-family: "Mali", cursive;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .mali-regular {
-    font-family: "Mali", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .mali-medium {
-    font-family: "Mali", cursive;
-    font-weight: 500;
-    font-style: normal;
-  }
-  
-  .mali-semibold {
-    font-family: "Mali", cursive;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .mali-bold {
-    font-family: "Mali", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .mali-extralight-italic {
-    font-family: "Mali", cursive;
-    font-weight: 200;
-    font-style: italic;
-  }
-  
-  .mali-light-italic {
-    font-family: "Mali", cursive;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .mali-regular-italic {
-    font-family: "Mali", cursive;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .mali-medium-italic {
-    font-family: "Mali", cursive;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
-  .mali-semibold-italic {
-    font-family: "Mali", cursive;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .mali-bold-italic {
-    font-family: "Mali", cursive;
-    font-weight: 700;
-    font-style: italic;
-  } */
 *{
   padding: 0%;
   margin: 0%;
@@ -147,7 +69,77 @@ a:link,a:visited,a:active{ /*cambia el estilo de los links*/
   color: #FEF7DC;
 }
 
-a:hover{ /*da el efecto de subrayado y cambio de color cuando se pasa el cursor por arriba*/
+.login{
+  margin-right: 2%;
+  color: #FEF7DC;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+}
+
+.loginBar{
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 1rem;
+  position: absolute;
+  top: 98px;
+  right: 0;
+  background-color: #A19882;
+  padding: 2rem;
+  box-shadow: 0 0 0 100vmax rgb(161, 152, 130, .5);
+  z-index: 999;
+}
+
+.loginBar input{
+  font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 5px;
+  color: #4E4634;
+  padding: 2%;
+}
+
+.cerrarLogin{
+  display: block;
+  color: #FEF7DC;
+  font-size: .5rem;
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: 0;
+}
+
+.loginBar a{
+color: #4E4634;;
+}
+
+.loginBar a:hover{
+  color: #FEF7DC;
+}
+
+.loginBar .ingresar{
+  background-color: #FEF7DC;
+  color: #4E4634;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.loginBar.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav a:hover{ /*da el efecto de subrayado y cambio de color cuando se pasa el cursor por arriba*/
   text-decoration:underline;
   color: #e2ddd9;
 }
@@ -159,6 +151,34 @@ a:hover{ /*da el efecto de subrayado y cambio de color cuando se pasa el cursor 
     font-weight: 400;
     font-style: italic;
     font-size: 150%;
+}
+/* Encuentra tu kaffa */
+.containerBusqueda{
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+}
+.buscar{
+  padding:3rem;
+}
+
+.buscar input{
+  width: 600px;
+  height: 30px;
+  padding: 0 10px;
+  font-size: 1rem;
+  font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 10px;
+  color: #4E4634;
+}
+
+.lupa{
+  margin: 5px;
+  display: inline-block;
+  color: #FEF7DC;
+  cursor: pointer;
 }
 
 /*Formulario de registro*/
@@ -209,6 +229,7 @@ margin-bottom: 10px;
   font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 600;
   font-style: normal;
+  cursor: pointer;
 }
 /* Términos y condiciones */
 .encabezadoTerminos{
@@ -275,7 +296,6 @@ margin-bottom: 10px;
   
   .form-resena .containerRatingClase{
     display: flex; 
-    /* justify-content: center; */
     align-items: center;
     margin: 10px; 
   }
@@ -327,40 +347,83 @@ margin-bottom: 10px;
   .ratingStars input:checked ~ label:after{
     opacity: 1;
   } /*hace que las estrellas se pinten al marcarlas y tiene una animación que hace que se pinten al pasar el mouse por arriba */
-/*Footer*/
+
+  /*Footer*/
 footer{
   background-color: #A19882;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.redes{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .logos{
-  display:flex;
-  justify-content: space-evenly;
-  align-content: space-around;
-  padding: 2px;
-  min-height:100px;
-  min-width: 400px;
-  flex-wrap: wrap;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  margin: 20px;
+  border-radius: 50%;
+}
+.logos a{
+  position: relative;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-35%, -35.5%);
 }
 
-.logos > a > i{
-  width: 200px;
-  height: 200px;
-  /* background-color: rgb(184, 165, 165); */ 
+.logos:hover{
+  background-color: #e60073;
+  box-shadow: 0 0 20px #e60073;
 }
 
-.marca{
-  display: flex;
+.logos:hover:nth-child(2){
+  background-color: #1877f2;
+  box-shadow: 0 0 20px #1877f2;
+}
+
+.logos:hover:nth-child(3){
+  background-color: #25d366;
+  box-shadow: 0 0 20px #25d366;
+}
+
+.logos:hover:nth-child(4){
+  background-color: #1da1f2;
+  box-shadow: 0 0 20px #1da1f2;
+}
+
+.logos:hover:nth-child(5){
+  background-color: #1877f2;
+  box-shadow: 0 0 20px #1877f2;
+}
+
+.developed{
+  align-content: end;
   justify-content: end;
   padding: 0px 20px 0px 0px;
   flex-wrap: wrap;
 }
 
-.seguinos{
+/* .seguinos{
   display: flex;
-  /* background-color: aqua; */
+  background-color: aqua; 
   justify-content: center;
   padding: 10px;
-}
+} */
 
 /* Small devices (768px and down to 400px */
 @media screen and (max-width: 768px) {
@@ -408,15 +471,19 @@ footer{
     align-items: end;
     text-align: right;
   }
-    /*Achica las barras de ingreso de texto*/
+  /*Achica las barras de ingreso de texto*/
     .containerIdCafe input{
       width: 50%;
       min-width: 10rem;
     }
   }
+  
+  .buscar input{
+    width: 400px;
+  }
 
 /*Really small devices (400px and down */
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 476px) {
     header{
       width: 100%;
       display: flex;
@@ -438,6 +505,10 @@ footer{
       margin-right: 5%;
     } 
 
+    .loginBar.visible{
+      top: 50px;
+    }
+
     .form-registrer{
       min-width: 300px;
       align-items: center;
@@ -448,16 +519,23 @@ footer{
     margin: 0;
     }
 
-    .logos{
+    .redes{
       width: 100%;
-      justify-content: center;
-      gap:2rem;
+      align-content: center;
       margin: 0;
       display: flex;
       flex-wrap: wrap;
     }
     .navbar{
       z-index: 999; /*subiendo el z index hago que la lista del menú hamburguesa quede por encima del resto de las cosas*/
+    }
+
+    .containerBusqueda{
+      display: inline-block;
+      justify-content: flex-start;
+    }
+    .buscar input{
+      max-width: 180px;
     }
 
   }
