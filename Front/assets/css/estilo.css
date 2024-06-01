@@ -1,10 +1,10 @@
-*{
+* {
   padding: 0%;
   margin: 0%;
   box-sizing: border-box;
 }
 
-.body{
+.body {
   background-color: #c5b096;
   color: #4E4634;
   font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -12,8 +12,9 @@
   font-style: normal;
 
 }
+
 /*Estilos para el header y nav*/
-header{
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,20 +23,20 @@ header{
   flex-wrap: wrap;
 }
 
-.navSection{
+.navSection {
   display: flex;
   align-items: center;
   flex-grow: 1;
 }
 
-.NavLogo{
+.NavLogo {
   max-width: 5rem;
   object-fit: contain;
 }
 
-.Kaffa{
+.Kaffa {
   justify-content: start;
-  font-family: "Mali", cursive,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 700;
   font-style: italic;
   font-size: 3rem;
@@ -43,18 +44,20 @@ header{
   margin-right: 5%;
 }
 
-.abrirMenu, .cerrarMenu{ /*son los botones para abrir y cerar el menú hamburguesa que aparecen en small devices*/
+.abrirMenu,
+.cerrarMenu {
+  /*son los botones para abrir y cerar el menú hamburguesa que aparecen en small devices*/
   display: none;
 }
 
-.navbar{
+.navbar {
   display: flex;
   flex-grow: 1;
   gap: 0.2rem;
   flex-wrap: wrap;
 }
 
-nav a{
+nav a {
   font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -64,12 +67,15 @@ nav a{
   padding-right: 1%;
 }
 
-a:link,a:visited,a:active{ /*cambia el estilo de los links*/
+a:link,
+a:visited,
+a:active {
+  /*cambia el estilo de los links*/
   text-decoration: none;
   color: #FEF7DC;
 }
 
-.login{
+.login {
   margin-right: 2%;
   color: #FEF7DC;
   cursor: pointer;
@@ -78,7 +84,7 @@ a:link,a:visited,a:active{ /*cambia el estilo de los links*/
   font-size: 2rem;
 }
 
-.loginBar{
+.loginBar {
   opacity: 0;
   visibility: hidden;
   display: flex;
@@ -94,7 +100,7 @@ a:link,a:visited,a:active{ /*cambia el estilo de los links*/
   z-index: 999;
 }
 
-.loginBar input{
+.loginBar input {
   font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -103,24 +109,25 @@ a:link,a:visited,a:active{ /*cambia el estilo de los links*/
   padding: 2%;
 }
 
-.cerrarLogin{
+.cerrarLogin {
   display: block;
   color: #FEF7DC;
   font-size: .5rem;
   background-color: Transparent;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   border: 0;
 }
 
-.loginBar a{
-color: #4E4634;;
+.loginBar a {
+  color: #4E4634;
+  ;
 }
 
-.loginBar a:hover{
+.loginBar a:hover {
   color: #FEF7DC;
 }
 
-.loginBar .ingresar{
+.loginBar .ingresar {
   background-color: #FEF7DC;
   color: #4E4634;
   border: none;
@@ -139,30 +146,33 @@ color: #4E4634;;
   visibility: visible;
 }
 
-nav a:hover{ /*da el efecto de subrayado y cambio de color cuando se pasa el cursor por arriba*/
-  text-decoration:underline;
+nav a:hover {
+  /*da el efecto de subrayado y cambio de color cuando se pasa el cursor por arriba*/
+  text-decoration: underline;
   color: #e2ddd9;
 }
 
-.presentacion{
-    margin: 10px;
-    padding: 10px;
-    font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 150%;
+.presentacion {
+  margin: 10px;
+  padding: 10px;
+  font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 150%;
 }
+
 /* Encuentra tu kaffa */
-.containerBusqueda{
+.containerBusqueda {
   display: inline-flex;
   justify-content: center;
   align-content: center;
 }
-.buscar{
-  padding:3rem;
+
+.buscar {
+  padding: 3rem;
 }
 
-.buscar input{
+.buscar input {
   width: 600px;
   height: 30px;
   padding: 0 10px;
@@ -174,7 +184,7 @@ nav a:hover{ /*da el efecto de subrayado y cambio de color cuando se pasa el cur
   color: #4E4634;
 }
 
-.lupa{
+.lupa {
   margin: 5px;
   display: inline-block;
   color: #FEF7DC;
@@ -182,7 +192,7 @@ nav a:hover{ /*da el efecto de subrayado y cambio de color cuando se pasa el cur
 }
 
 /*Formulario de registro*/
-.form-registrer{
+.form-registrer {
   box-sizing: border-box;
   width: 80%;
   max-width: 500px;
@@ -200,27 +210,28 @@ nav a:hover{ /*da el efecto de subrayado y cambio de color cuando se pasa el cur
   box-shadow: 7px 13px 37px #000;
 }
 
-.controlsSusc{/*cajitas de texto del formulario de registro*/
-width: 90%;
-background-color: #E6DDC6;
-padding: 10px;
-border-radius: 4px;
-margin-bottom: 10px;
-border: 1px solid #4E4634;
-font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-weight: 300;
-font-style: normal;
-color: #4E4634;
-}
-
-.form-registrer h4{
-text-align: left;
-margin-bottom: 10px;
-}
-
-.form-registrer .botonSusc{
+.controlsSusc {
+  /*cajitas de texto del formulario de registro*/
   width: 90%;
-  background-color: #b8a77e;
+  background-color: #E6DDC6;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #4E4634;
+  font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #4E4634;
+}
+
+.form-registrer h4 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.boton {
+  width: 90%;
+  background-color: #b8a06a;
   border: none;
   border-radius: 4px;
   padding: 10px;
@@ -231,17 +242,22 @@ margin-bottom: 10px;
   font-style: normal;
   cursor: pointer;
 }
+.boton:hover {
+  background-color: #867857;
+}
+
 /* Términos y condiciones */
-.encabezadoTerminos{
+.encabezadoTerminos {
   margin: 1%;
 }
-.terminos{
+
+.terminos {
   display: flex;
   margin: 1%;
   flex-wrap: wrap;
 }
 
-.volver{
+.volver {
   display: flex;
   justify-content: center;
   margin: 1%;
@@ -249,111 +265,121 @@ margin-bottom: 10px;
 }
 
 /*Formulario reseñas*/
-.form-resena{
+.form-resena {
   position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: 10px;
-  }
-  
-  .containerIdCafe{
-    display: flex;
-    gap: 3rem;
-    flex-wrap: wrap;
-    margin: 2%;
-  }
-  
-  .containerIdCafe input{
-    font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 200;
-    font-style: normal;
-    padding-left: 0.4rem;
-    width: 40rem;
-    border-radius: 5px;
-  }
-  
-  #localidades{
-    width: auto;
-    font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1rem;
-    padding: 0.2rem;
-    border-radius: 5px;
-  }
-  
-  /*container de rating con estrellas*/
-  .containerRating{
-    display: flex;
-    max-width: 850px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
-  
-  .form-resena .containerRatingClase{
-    display: flex; 
-    align-items: center;
-    margin: 10px; 
-  }
-  
-  .form-resena .containerRatingClase h3{
-    min-width: 180px;
-    padding-right: 20px;
-  }
-  
-  .form-resena .containerRatingClase .ratingStars{
-    position: relative;
-    display: flex;
-    flex-direction: row-reverse; /*esta rotación está porque por algún motivo las estrellas se pintan de derecha a izquierda en lugar de izquierda a derecha como es lo lógico*/
-  }
-  
-  .ratingStars input{
-    display: none;
-  }
-  
-  .ratingStars label{
-    cursor: pointer;
-    width: 2rem;
-  }
-  
-  .ratingStars label:before{
-    content: '★';
-    position: relative;
-    display: block;
-    font-size: 2rem;
-    color: #A19882
-  }
-  
-  .ratingStars label:after{
-    content: '★';
-    position: absolute;
-    display: block;
-    font-size: 2rem;
-    color: gold;
-    top: 0;
-    opacity: 0;
-    transition: .5s;
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5)
-  }
-  .ratingStars label:hover:after{
-    opacity: 1;
-  }
-  .ratingStars label:hover:after,
-  .ratingStars label:hover ~ label:after,
-  .ratingStars input:checked ~ label:after{
-    opacity: 1;
-  } /*hace que las estrellas se pinten al marcarlas y tiene una animación que hace que se pinten al pasar el mouse por arriba */
-  /* .ratingStars label:hover:after,
-  .ratingStars input:checked ~ label:after{
-    opacity: 1;
-  } */
+}
 
-  /*Footer*/
-footer{
+.containerIdCafe {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin: 2%;
+}
+
+.containerIdCafe input {
+  font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding-left: 0.4rem;
+  width: 40rem;
+  border-radius: 5px;
+}
+
+#localidades {
+  width: auto;
+  font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  padding: 0.2rem;
+  border-radius: 5px;
+}
+
+/*container de rating con estrellas*/
+.containerRating {
+  display: flex;
+  max-width: 850px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#valorPromedio{
+  text-align: center;
+}
+.form-resena .containerRatingClase {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.form-resena .containerRatingClase h3 {
+  min-width: 180px;
+  padding-right: 20px;
+}
+
+.form-resena .containerRatingClase .ratingStars {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  /*esta rotación está porque por algún motivo las estrellas se pintan de derecha a izquierda en lugar de izquierda a derecha como es lo lógico*/
+}
+
+.ratingStars input {
+  display: none;
+}
+
+.ratingStars label {
+  cursor: pointer;
+  width: 2rem;
+}
+
+.ratingStars label:before {
+  content: '★';
+  position: relative;
+  display: block;
+  font-size: 2rem;
+  color: #A19882
+}
+
+.ratingStars label:after {
+  content: '★';
+  position: absolute;
+  display: block;
+  font-size: 2rem;
+  color: gold;
+  top: 0;
+  opacity: 0;
+  transition: .5s;
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.5)
+}
+
+.ratingStars label:hover:after {
+  opacity: 1;
+}
+/*hace que las estrellas se pinten al marcarlas y tiene una animación que hace que se pinten al pasar el mouse por arriba */
+.ratingStars label:hover:after,
+.ratingStars label:hover~label:after,
+.ratingStars input:checked~label:after {
+  opacity: 1;
+}
+
+#btnReseña {
+  display: flex;
+  justify-content: center;
+}
+
+#btnReseña .boton {
+  width: 30%;
+}
+
+/*Footer*/
+footer {
   background-color: #A19882;
   display: flex;
   flex-direction: column;
@@ -363,7 +389,7 @@ footer{
   width: 100%;
 }
 
-.redes{
+.redes {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -372,14 +398,15 @@ footer{
   cursor: pointer;
 }
 
-.logos{
+.logos {
   position: relative;
   height: 30px;
   width: 30px;
   margin: 20px;
   border-radius: 50%;
 }
-.logos a{
+
+.logos a {
   position: relative;
   height: 80px;
   width: 80px;
@@ -390,36 +417,36 @@ footer{
   transform: translate(-35%, -35.5%);
 }
 
-.logos:hover{
+.logos:hover {
   background-color: #e60073;
   box-shadow: 0 0 20px #e60073;
 }
 
-.logos:hover:nth-child(2){
+.logos:hover:nth-child(2) {
   background-color: #1877f2;
   box-shadow: 0 0 20px #1877f2;
 }
 
-.logos:hover:nth-child(3){
+.logos:hover:nth-child(3) {
   background-color: #25d366;
   box-shadow: 0 0 20px #25d366;
 }
 
-.logos:hover:nth-child(4){
+.logos:hover:nth-child(4) {
   background-color: #1da1f2;
   box-shadow: 0 0 20px #1da1f2;
 }
 
-.logos:hover:nth-child(5){
+.logos:hover:nth-child(5) {
   background-color: #1877f2;
   box-shadow: 0 0 20px #1877f2;
 }
 
-.developed{
-  align-content: end;
-  justify-content: end;
+.developed {
+  display: flex;
+  justify-content: center;
   padding: 0px 20px 0px 0px;
-  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
 }
 
 /* .seguinos{
@@ -431,7 +458,7 @@ footer{
 
 /* Small devices (768px and down to 400px */
 @media screen and (max-width: 768px) {
-  .abrirMenu{
+  .abrirMenu {
     display: block;
     border: 0;
     font-size: 1.25rem;
@@ -441,16 +468,16 @@ footer{
     padding-right: 1rem;
   }
 
-  .cerrarMenu{
+  .cerrarMenu {
     display: block;
     color: #FEF7DC;
     font-size: 1rem;
     background-color: Transparent;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     border: 0;
   }
 
-  .navbar{
+  .navbar {
     opacity: 0;
     visibility: hidden;
     display: flex;
@@ -466,80 +493,86 @@ footer{
     box-shadow: 0 0 0 100vmax rgb(161, 152, 130, .5);
     z-index: 999;
   }
+
   .navbar.visible {
     opacity: 1;
     visibility: visible;
   }
+
   .navbar a {
     flex-direction: column;
     align-items: end;
     text-align: right;
   }
+
   /*Achica las barras de ingreso de texto*/
-    .containerIdCafe input{
-      width: 50%;
-      min-width: 10rem;
-    }
+  .containerIdCafe input {
+    width: 50%;
+    min-width: 10rem;
   }
-  
-  .buscar input{
-    width: 400px;
-  }
+}
+
+.buscar input {
+  width: 400px;
+}
 
 /*Really small devices (400px and down */
-  @media screen and (max-width: 476px) {
-    header{
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-    }
+@media screen and (max-width: 476px) {
+  header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    .NavLogo{
-      max-width: 2rem;
-      object-fit: contain;
-    }
-    
-    .Kaffa{
-      justify-content: start;
-      font-family: "Mali", cursive,'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-      font-weight: 700;
-      font-style: italic;
-      font-size: 2rem;
-      color: #FEF7DC;
-      margin-right: 5%;
-    } 
+  .NavLogo {
+    max-width: 2rem;
+    object-fit: contain;
+  }
 
-    .loginBar.visible{
-      top: 50px;
-    }
+  .Kaffa {
+    justify-content: start;
+    font-family: "Mali", cursive, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 2rem;
+    color: #FEF7DC;
+    margin-right: 5%;
+  }
 
-    .form-registrer{
-      min-width: 300px;
-      align-items: center;
-    }
+  .loginBar.visible {
+    top: 50px;
+  }
 
-    .form-resena{
+  .form-registrer {
+    min-width: 300px;
+    align-items: center;
+  }
+
+  .form-resena {
     min-width: 80%;
     margin: 0;
-    }
-
-    .redes{
-      width: 100%;
-      align-content: center;
-      margin: 0;
-      display: flex;
-      flex-wrap: wrap;
-    }
-    .navbar{
-      z-index: 999; /*subiendo el z index hago que la lista del menú hamburguesa quede por encima del resto de las cosas*/
-    }
-
-    .containerBusqueda{
-      display: inline-block;
-      justify-content: flex-start;
-    }
-    .buscar input{
-      max-width: 180px;
-    }
-
   }
+
+  .redes {
+    width: 100%;
+    align-content: center;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .navbar {
+    z-index: 999;
+    /*subiendo el z index hago que la lista del menú hamburguesa quede por encima del resto de las cosas*/
+  }
+
+  .containerBusqueda {
+    display: inline-block;
+    justify-content: flex-start;
+  }
+
+  .buscar input {
+    max-width: 180px;
+  }
+
+}

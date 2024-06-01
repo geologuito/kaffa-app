@@ -59,8 +59,10 @@ if (element.value == Math.floor(promedio)){
 }
 
 }); */
+
 const categories = ["calidad", "pasteleria", "ambiente", "servicio", "variedad", "arquitectura", "comodidad", "limpieza"];
         const inputPromedio = document.getElementsByName("promedio");
+        const valorPromedio = document.getElementById("valorPromedio");
 
         function calcularPromedio() {
             let suma = 0;
@@ -75,16 +77,18 @@ const categories = ["calidad", "pasteleria", "ambiente", "servicio", "variedad",
             });
 
             let promedio = suma / categories.length;
-            return Math.floor(promedio);
+            return promedio;
         }
 
         function actualizarPromedio() {
-            let promedioRedondeado = calcularPromedio();
+            let promedio = calcularPromedio();
+            let promedioRedondeado = Math.floor(promedio)
             console.log(promedioRedondeado);
+            valorPromedio.innerText = promedio.toFixed(1);
 
             inputPromedio.forEach(element => {
                 element.checked = parseInt(element.value) === promedioRedondeado;
-            });
+            });  
         }
 
         // Añadir event listeners a todos los inputs de estrellas
