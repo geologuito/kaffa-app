@@ -251,7 +251,9 @@ nav a:hover {
   justify-content: center;
   align-items: center;
 }
-
+#error{
+  text-align: center;
+}
 /* Términos y condiciones */
 .encabezadoTerminos {
   margin: 1%;

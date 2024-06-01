@@ -27,7 +27,7 @@ function validarEnviar(){
         if(edadEntera < 16 || edadEntera > 99){
             // alert("Tiene que ser mayor de 16 años o tener menos de 99 años.")
             document.formulario.edad.focus()
-            parrafo.innerHTML = "Edad incorrecta."
+            parrafo.innerHTML = "ingrese una edad entre 16 y 99 años"
             return 
         }
     }
@@ -43,7 +43,7 @@ function validarEnviar(){
         if(document.formulario.dni.value.length != 8){
             // alert("El dni tiene que tener 8 numeros.")
             document.formulario.dni.focus()
-            parrafo.innerHTML = "DNI incorrecto."
+            parrafo.innerHTML = "el dni debe tener 8 carcteres"
             return 
         }
     }
