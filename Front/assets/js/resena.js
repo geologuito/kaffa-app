@@ -57,7 +57,7 @@ inputPromedio.forEach(element =>{
 if (element.value == Math.floor(promedio)){
     element.checked = true
 }
-
+REPETITIVO INVESTIGAR COMO MEJORAR
 }); */
 
 const categories = ["calidad", "pasteleria", "ambiente", "servicio", "variedad", "arquitectura", "comodidad", "limpieza"];
