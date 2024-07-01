@@ -3,10 +3,30 @@ from flask import render_template
 
 app = Flask(__name__)
 
-
+#Renderizado de paginas
 @app.route('/')
 def home():
     return render_template('index.html')
+
+@app.route('/Form')
+def formSuscripcion():
+    return render_template('FormSuscripcion.html')
+
+@app.route('/Eula')
+def EULA():
+    return render_template('terminos y condiciones.html')
+
+@app.route('/Resena')
+def formResena():
+    return render_template('FormResena.html')
+
+@app.route('/EncuentraKaffa')
+def findKaffa():
+    return render_template('EncuentraKaffa.html')
+
+
+
+#Endpoints
 
 @app.route('/add_cafe')
 def add_cafe():
