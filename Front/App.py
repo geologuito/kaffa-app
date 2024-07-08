@@ -66,12 +66,12 @@ def add_cafe():
     if request.method == 'POST':
         nombre = request.form['nombre']
         direccion = request.form['direccion']
+        localidad = request.form['localidad']
         puntuacion = request.form['puntuacion']
-        imagen = request.form['imagen']
         detalles = request.form['detalles']
         cur = mysql.connection.cursor()
-        cur.execute('INSERT INTO Cafeterias  (nombre, direccion, puntuacion, imagen, detalles) VALUES (%s, %s, %s, %s, %s)', 
-        (nombre, direccion, puntuacion, imagen, detalles))
+        cur.execute('INSERT INTO Cafeterias  (nombre, direccion, localidad, puntuacion, detalles) VALUES (%s, %s, %s, %s, %s)', 
+        (nombre, direccion, localidad, puntuacion, detalles))
         mysql.connection.commit()
         flash('Cafeteria agregada correctamente')
         return redirect(url_for('Admin'))
@@ -89,19 +89,19 @@ def update_contact(id):
     if request.method == 'POST':
         nombre = request.form['nombre']
         direccion = request.form['direccion']
+        localidad = request.form['localidad']
         puntuacion = request.form['puntuacion']
-        imagen = request.form['imagen']
         detalles = request.form['detalles']
         cur = mysql.connection.cursor()
         cur.execute("""
                     UPDATE Cafeterias
                     SET nombre =  %s,
                         direccion =  %s,
+                        localidad =  %s,
                         puntuacion =  %s,
-                        imagen =  %s,
                         detalles =  %s
                     WHERE id = %s
-                    """, (nombre, direccion, puntuacion, imagen, detalles, id))
+                    """, (nombre, direccion, localidad, puntuacion, detalles, id))
         mysql.connection.commit()
         flash('Cafeteria acualizada')
         return redirect(url_for('Admin'))
@@ -116,6 +116,13 @@ def delete_cafe(id):
     flash('Cafeteria eliminada correctamente')
     return redirect(url_for('Admin'))
 
+
+# @app.route('/EncuentraKaffa/<string:nombre>')
+# def encuentraKaffa(nombre):
+#     cur = mysql.connection.cursor()
+#     cur.execute('SELECT * FROM Cafeterias WHERE nombre = %s',(nombre))
+#     data = cur.fetchall()
+#     return render_template('EncuentraKaffa.html')
 
 
 if __name__ == '__main__':

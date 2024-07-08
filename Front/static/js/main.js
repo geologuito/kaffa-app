@@ -38,4 +38,3 @@ ingresar.addEventListener("click", () => {
         alert("Usuario o contraseña incorrectos")
     }
 })
-
