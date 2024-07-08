@@ -146,6 +146,14 @@ a:active {
   visibility: visible;
 }
 
+.Administrador {
+  visibility: hidden;
+}
+
+.Administrador.visible {
+  visibility: visible;
+}
+
 nav a:hover {
   /*da el efecto de subrayado y cambio de color cuando se pasa el cursor por arriba*/
   text-decoration: underline;
@@ -475,6 +483,7 @@ footer {
   padding: 0px 20px 0px 0px;
   margin-bottom: 0.5rem;
 }
+
 
 /* .seguinos{
   display: flex;

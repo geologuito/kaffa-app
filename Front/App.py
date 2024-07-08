@@ -4,12 +4,13 @@ from flask_mysqldb import MySQL
 
 app = Flask(__name__)
 
-
+import mysql.connector
+import mysql
 #Coneccion a la base de datos
 
 app.config['MYSQL_HOST'] = '127.0.0.1'
-app.config['MYSQL_USER'] = 'admin'
-app.config['MYSQL_PASSWORD'] = 'admin'
+app.config['MYSQL_USER'] = 'Admin'
+app.config['MYSQL_PASSWORD'] = 'Admin'
 app.config['MYSQL_DB'] = 'kaffa_db'
 mysql = MySQL(app)
 

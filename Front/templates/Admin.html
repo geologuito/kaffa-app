@@ -22,16 +22,16 @@
                     <input type="text" name="nombre" placeholder="Nombre" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="direccion" placeholder="Direccion" class="form-control">
+                    <input type="text" name="direccion" placeholder="Dirección" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="puntuacion" placeholder="puntuacion"class="form-control" >
+                    <input type="text" name="puntuacion" placeholder="Puntuación"class="form-control" >
                 </div>
                 <div class="form-group">
                     <input type="text" name="imagen" placeholder="imagen" class="form-control">
                 </div>
                 <div class="form-group">
-                    <input type="text" name="detalles" placeholder="detalles" class="form-control">
+                    <input type="text" name="detalles" placeholder="Comentarios" class="form-control">
                 </div>
                 <div class="form-group">
                     <button type="submit" class="form-control" style="background-color: #c5b096;">
@@ -47,11 +47,11 @@
         <table class="table-striped table-bordered table-sm" style="margin: 1%; color:#FEF7DC; background-color: #A19882;">
             <thead>
                 <tr>
-                    <td>nombre</td>
-                    <td>direccion</td>
-                    <td>puntuacion</td>
-                    <td>imagen</td>
-                    <td>detalles</td>
+                    <td>Cafeterí</td>
+                    <td>Dirección</td>
+                    <td>Puntuación</td>
+                    <td>Imagen</td>
+                    <td>Comentarios</td>
                     <td>Operaciones</td>
                 </tr>
             </thead>
@@ -64,8 +64,8 @@
                     <td> {{cafeteria.4}} </td>
                     <td> {{cafeteria.5}} </td>
                     <td>
-                        <a href="/edit/{{cafeteria.0}}" class="btn btn-secondary">Editar</a>
-                        <a href="/delete/{{cafeteria.0}}" class="btn btn-danger" >Eliminar</a>
+                        <a href="/edit/{{cafeteria.0}}" class="btn-secondary">Editar</a>
+                        <a href="/delete/{{cafeteria.0}}" class="btn-danger" >Eliminar</a>
                     </td>
         
                 </tr>
