@@ -1,15 +1,15 @@
 {% extends 'layout.html' %}
 
 {%block body%}
-<form action="/update/{{cafeteria.0}}" method="POST">
+<form action="/update/{{cafeteria.0}}" method="POST" style="padding:2%;">
 
     <input type="text" name="nombre" placeholder="Nombre" value="{{ cafeteria.1 }}"> 
     <input type="text" name="direccion" placeholder="Direccion" value="{{ cafeteria.2 }}">
     <input type="text" name="puntuacion" placeholder="puntuacion" value="{{ cafeteria.3 }}">
-    <input type="text" name="imagen" placeholder="imagen" value="{{ cafeteria.4 }}">
+    <input type="text" name="localidad" placeholder="localidad" value="{{ cafeteria.4 }}">
     <input type="text" name="detalles" placeholder="detalles" value="{{ cafeteria.5 }}">
     <button type="submit">
         Save
     </button>
 </form>
-{% endblock %}
+{% endblock %}A
